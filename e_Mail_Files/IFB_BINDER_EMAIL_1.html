@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Medica Page</title>
+    <style>
+        html,
+        body,
+        * {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+            /* letter-spacing: .4px; */
+        }
+
+        html {
+            display: table;
+            margin: auto;
+        }
+
+        body {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .container {
+            text-align: center;
+            display: block;
+            padding: 0%;
+            background-color: #FFFFFF;
+            margin-top: 10px;
+        }
+
+        .container1 {
+            text-align: center;
+            display: block;
+            padding: 0%;
+            background-color: #FFFFFF;
+        }
+
+        hr.rounded {
+            border-top: 8px solid #097a7a;
+            border-radius: 5px;
+
+        }
+
+        .text {
+            text-align: center;
+            display: block;
+            padding: 0%;
+            line-height: 150%;
+        }
+
+        .mail-body {
+            line-height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0px 30px;
+        }
+
+        .mail-body p {
+            line-height: 25px;
+        }
+
+        #greeting {
+            margin: 20px 0px;
+        }
+
+        .account {
+            line-height: 150%;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .cur {
+            cursor: pointer;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn a {
+            padding: 0px 20px
+        }
+
+        .ftext {
+            text-align: center;
+            padding: 10px 30px;
+        }
+
+        .paynow {
+            text-align: center;
+
+        }
+
+        .btnp {
+            text-align: center;
+            background-color: #C81766;
+            color: white;
+            padding: 10px 25px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 17px;
+        }
+
+        .htext {
+            line-height: 150%;
+
+        }
+
+        ul {
+            margin-left: 40px;
+        }
+
+        .lih {
+            line-height: 150%;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .social-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 20px;
+        }
+
+        .social-wrapper>* {
+            margin-left: 20px;
+        }
+
+        .social-wrapper p {
+            font-weight: bold;
+            color: white;
+            font-size: 18px;
+        }
+
+        .social-wrapper img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .social-container {
+            width: 100%;
+            height: fit-content;
+            background-color: #345181;
+            min-width: 100%;
+            color: #FFFFFF;
+            padding: 20px 0;
+        }
+
+        .social-container hr {
+            background: white;
+            width: 95%;
+            margin: 0px auto;
+            height: 2px;
+        }
+
+        .btn-contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .btn-contact a {
+            text-decoration: none;
+            font-size: 14px;
+            margin: 0 10px;
+            color: white;
+        }
+
+        .info {
+            margin-top: 30px;
+            line-height: 20%;
+            letter-spacing: .4px;
+        }
+
+        .info p {
+            font-weight: 300;
+            font-size: 12px;
+            margin-bottom: 20px;
+            line-height: 150%;
+        }
+
+        .info p span {
+            font-weight: bold;
+            display: block;
+        }
+
+        .info p a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        #copyright {
+            margin-bottom: 0px;
+        }
+
+        .email-info {
+            margin: 0 5px;
+            font-size: 12px;
+            color: gray;
+            padding: 2px 0;
+            line-height: 180%;
+        }
+
+        .email-info a {
+            text-decoration: none;
+            color: gray;
+            font-weight: bold;
+        }
+        .social-wrappers {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 20px;
+        }
+
+        .social-wrappers>* {
+            margin-left: 20px;
+        }
+
+        .social-wrappers p {
+            
+            color: rgb(16, 11, 11);
+            font-size: 18px;
+        }
+
+        
+
+        .social-containers {
+            width: 100%;
+            height: fit-content;
+            background-color: #f4f5ef;
+            min-width: 100%;
+            color: #FFFFFF;
+            padding: 23px 25px;
+        }
+
+
+        /* @media only screen and (min-width: 430px)  {
+            .btn-contact {
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <main class="mode">
+        <br>
+
+        <div class="container">
+            <img id="img1" src="img/Medica Logo_Primary_Color.png" alt="Medica" height="38" width="200">
+        </div>
+        <br />
+        <hr class="rounded">
+        <br />
+        <div class="container1">
+            <img src="img/ifbbinderpayment.png"
+                alt="ID Card" height="101" width="100">
+        </div>
+        <br>
+        <div class="text">
+            <h1>One more step to get your new ID card</h1>
+        </div>
+
+        <div class="mail-body">
+            <p id="greeting">Hello FIRST_NAME,</p>
+            <p id="mail-content">
+                Your new health plan starts January 1 — and your member ID card is ready.We’ll send it your way as soon as you <B>make your first premium payment.</B>
+            </p>
+        </div>
+        <br>
+        <div class="paynow">
+            <a href="https://www.medica.com/make-a-payment/ifb-nfb"><button class="btnp">Pay now</button></a>
+        </div>
+        <br>
+        <br>
+
+        <div class="mail-body">
+      
+            <p>When you do, you’ll have coverage on the day your plan begins. You can getthe care you need — and use your wellness tools and extras. These are just a few:</p>
+            <br>
+            <ul>
+                <li class="lih">Your
+                    <b><a alias="account" class="cur" conversion="true" data-linkto="https://"
+                        href="https://memberauth.medicahealthplan.medica.com/" style="color:#C81766;text-decoration:none;"
+                        target="_blank" title="account">online member account</a>,
+                </b>
+                    for easy access to your plan information and member ID card</li>
+                <li class="lih"><b>AbleTo,</b>
+                    your mental health app for help with stress</li>
+                <li class="lih"><b>My Health by Medica</b>
+                    , your wellness app with gift card rewards fortracking steps and choosing healthy habits</li>
+            </ul>
+        </div>       
+        <br>
+        <br>
+        <div class="contact mail-body">
+            <p>You can make your first premium payment online.</p>
+            <br>
+            
+            <p>Or give us a call.</p>
+            <p><b>1-866-394-6877</b> (TTY: <b>711</b>)</p>
+            <p>8 a.m. - 6 p.m. CT, Monday - Friday<br>
+                Closed 8 - 9 a.m. CT, Thursdays</p>
+        </div>
+        <br><br>
+        <div class="social-containers">
+            <div class="social-wrappers">
+                <p>If you’ve already made your first premium payment – thank you.<br>
+                    It takes about 5 business days for us to process it and mail your ID card.</p>
+                
+            </div>            
+        </div>
+        
+        <div class="social-container">
+            <div class="social-wrapper">
+                <p>SOCIAL</p>
+                <a href="https://www.facebook.com/Medica"><img src="https://image.s4.exct.net/lib/fe911573736c007d7d/m/2/053f54d0-cb89-4c18-b3fd-dec7cc9dd5c4.png"
+                    alt="Facebook" /></a>
+                <a href="https://www.linkedin.com/company/medica/"><img src="https://image.s4.exct.net/lib/fe911573736c007d7d/m/2/d7ea03e7-4e81-4787-bf32-17a3165e7c35.png"
+                    alt="LinkedIn" /></a>
+                <a href="https://x.com/Medica4Me"><img src="https://image.s4.exct.net/lib/fe911573736c007d7d/m/2/0ff777be-83b7-4f20-a1ef-7eff454bb7e0.png"
+                    alt="Twitter" /></a>
+            </div>
+            <hr>
+            <div class="btn-contact">
+                <a href="https://www.medica.com/contact-us">Contact Us</a>
+                <p>|</p>
+                <a href="https://www.medica.com/privacy">Privacy</a>
+                <p>|</p>
+                <a href="https://www.medica.com/terms-of-use">Terms of Use</a>
+                <p>|</p>
+                <a href=" https://click.email-medica.com/unsub_center.aspx?qs=1453f893c0b60b8a0baa6b62a07a3ddfbea1b346c2ffeb4b8f2ba6c95561b64692db9b1aafe3222badf60e1aba33e4f0c5736a4f99869d40600108e0e03a494f7e32580610ac9a8d">Unsubscribe</a>
+                <p>|</p>
+                <a href=" https://click.email-medica.com/profile_center.aspx?qs=1453f893c0b60b8a150577cb5c1472751e378383092eeee37c0551cd3ad5ed39a038fdafc67aad4f7e1dc733915c62b4daa232567c88419211ec50bd3ebc5e21">Manage Preferences</a>
+            </div>
+            <div class="info mail-body">
+                <p><span>Information in Other Languages</span> If you want free help translating this information, call
+                    the
+                    number included in this email or on the back of your Medica IDcard. <a href="https://www.medica.com/language-assistance-and-non-discrimination">Other languages
+                        &gt;</a></p>
+                <p><span>Nondiscrimination / Accessibility</span> Medica complies with applicable Federal civil rights
+                    laws
+                    and will not discriminate against any person on the basis of race, color, national origin,
+                    age, disability or sex. <a href="https://www.medica.com/Corp/Non-Discrimination/Non-Discrimination-Notices ">Read more &gt;</a></p>
+                <p>
+                    This email was sent to: <a href="">MEMBER_MAIL_ID</a> <br>
+                    This email was sent by: <b>Medica</b> <br>401 Carlson Pkwy, Minnetonka, MN 55305
+                </p>
+                <br>
+                <p id="copyright">© 2024 Medica. | MHP-IFB1011864-1-01123A</p>
+            </div>
+        </div>
+
+        
+        </main>
+</body>
+
+</html>
